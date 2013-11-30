@@ -1,7 +1,5 @@
 package Nov;
 
-import java.util.ArrayList;
-
 public class ReverseNodesinkGroup {
 
 	public static void main(String[] args) {
