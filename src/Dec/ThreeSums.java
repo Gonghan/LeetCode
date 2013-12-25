@@ -21,8 +21,6 @@ class ThreeSumsSolution {
             for(int j=i+1;j<num.length;j++){
                 for(int k=j+1;k<num.length;k++){
                     int subsum=num[i]+num[j]+num[k];
-                    int d1=Math.abs(subsum-target);
-                    int d2=Math.abs(closest-target);
                     if(Math.abs(subsum-target)<Math.abs(closest-target)){
                         closest=subsum;
                     }
