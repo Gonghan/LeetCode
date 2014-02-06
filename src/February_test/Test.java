@@ -71,4 +71,6 @@ public class Test {
 		System.out.println(b.postorderTraversal(A));
 		
 	}
+	
+	
 }
