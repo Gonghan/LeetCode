@@ -27,6 +27,7 @@ public class myLinkedList<T> {
 
 	void remove(Node<T> node) {
 		node.before.after = node.after;
+		node.after.before=node.before;
 	}
 
 	Node<T> addFirst(T value) {
