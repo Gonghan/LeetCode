@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class WillcardMatching {
 
-	private boolean dp[][];
+//	private boolean dp[][];
 	public boolean isMatch(String s, String p) {
 		boolean result = false;
 		p = removeStars(p);
-		dp=new boolean[s.length()+1][p.length()+1];
+//		dp=new boolean[s.length()+1][p.length()+1];
 		// 3 types:
 		// 1. b
 		// 2. ?

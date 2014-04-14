@@ -6,9 +6,9 @@ public class MedianOfTwoSortedArrays {
 		return 1;
 	}
 		
-	private int findk(int[]A,int A_start_index,int[]B,int B_start_index){
-		
-		int result = 0;
-		return result;
-	}
+//	private int findk(int[]A,int A_start_index,int[]B,int B_start_index){
+//		
+//		int result = 0;
+//		return result;
+//	}
 }

@@ -39,6 +39,7 @@ public class CombinationSumII {
 				c++;
 			}
 			for (int j = 1; j <= c; j++) {
+				@SuppressWarnings("unchecked")
 				ArrayList<Integer> tmppath = (ArrayList<Integer>) path.clone();
 				for (int k = 0; k < j; k++) {
 					tmppath.add(value);

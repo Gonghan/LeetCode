@@ -15,11 +15,11 @@ public class myStack<T> {
 	}
 
 	stackNode<T> peek() {
-		return stack.getLast().value;
+		return stack.getLast();
 	}
 
 	stackNode<T> pop() {
-		stackNode<T> node = stack.getLast().value;
+		stackNode<T> node = stack.getLast();
 		stack.removeLast();
 		return node;
 	}

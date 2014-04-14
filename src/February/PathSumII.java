@@ -12,6 +12,7 @@ public class PathSumII {
 		return result;
 	}
 
+	@SuppressWarnings("unchecked")
 	private void traverse(TreeNode node, int sum, ArrayList<Integer> path,
 			int subsum) {
 		if (node == null) {

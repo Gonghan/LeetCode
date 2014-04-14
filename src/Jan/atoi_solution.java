@@ -1,6 +1,6 @@
 package Jan;
 
-public class atoi {
+public class atoi_solution {
 
 	public int atoi(String str) {
 		str = str.trim();

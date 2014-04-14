@@ -47,6 +47,7 @@ public class PalindromePartition {
 				// cache.get(i-1)=> each node add second
 				ArrayList<ArrayList<String>> tmplist = cache.get(i - 1);
 				for (ArrayList<String> subtmplist : tmplist) {
+					@SuppressWarnings("unchecked")
 					ArrayList<String> newsubtmplist = (ArrayList<String>) subtmplist
 							.clone();
 					newsubtmplist.add(second);
@@ -66,7 +67,7 @@ public class PalindromePartition {
 		if (s.length() == 1) {
 			return true;
 		}
-		boolean result = true;
+//		boolean result = true;
 		char[] chs = s.toCharArray();
 		for (int i = 0; i < chs.length; i++) {
 			if (chs[i] != chs[chs.length - 1 - i]) {

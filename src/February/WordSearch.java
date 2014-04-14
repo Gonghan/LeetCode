@@ -59,6 +59,7 @@ public class WordSearch {
 		if (visited.contains(code)) {
 			return false;
 		}
+		@SuppressWarnings("unchecked")
 		ArrayList<Integer> newVisited = (ArrayList<Integer>) visited.clone();
 		boolean result = false;
 		newVisited.add(code);

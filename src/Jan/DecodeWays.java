@@ -57,9 +57,9 @@ public class DecodeWays {
 			cache[i]=cache[i-1];
 
 		}
-		for (int i : cache) {
-			//System.out.println(i);
-		}
+//		for (int i : cache) {
+//			//System.out.println(i);
+//		}
 		return cache[s.length() - 1];
 	}
 

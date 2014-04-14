@@ -8,7 +8,7 @@ public class InsertInterval {
 		InsertInterval i = new InsertInterval();
 		Interval A = new Interval(1, 5);
 		Interval B = new Interval(6, 9);
-		Interval C = new Interval(8, 9);
+		//Interval C = new Interval(8, 9);
 		Interval D = new Interval(5, 6);
 		// Interval newInterval=new Interval();
 		ArrayList<Interval> intervals = new ArrayList<Interval>();

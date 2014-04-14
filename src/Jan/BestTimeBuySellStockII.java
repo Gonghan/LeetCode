@@ -2,10 +2,13 @@ package Jan;
 
 public class BestTimeBuySellStockII {
 
+	
+
 	public int maxProfit(int[] prices) {
         int profit=0;
         boolean bought=false;
-        int previous=0;
+        @SuppressWarnings("unused")
+		int previous = 0;
         int index=0;
         while(index<prices.length){
             if(bought==false){
@@ -39,7 +42,6 @@ public class BestTimeBuySellStockII {
             }
             index++;
         }
-        
         return profit;
     }
 }

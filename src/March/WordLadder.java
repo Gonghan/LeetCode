@@ -48,6 +48,7 @@ public class WordLadder {
 			}
 			ArrayList<String> nextStrs = getNext(dict, curr, end,list);
 			for (String s : nextStrs) {
+				@SuppressWarnings("unchecked")
 				ArrayList<String> tmplist = (ArrayList<String>) list.clone();
 				tmplist.add(s);
 				queue.offer(tmplist);

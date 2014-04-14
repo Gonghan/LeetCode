@@ -1,7 +1,5 @@
 package Jan;
 
-import java.util.ArrayList;
-
 import Nov.ListNode;
 
 public class PartitionList {
@@ -11,8 +9,6 @@ public class PartitionList {
 		ListNode B = new ListNode(3);
 		ListNode C = new ListNode(1);
 		ListNode D = new ListNode(1);
-		ListNode E = new ListNode(1);
-		ListNode F = new ListNode(1);
 		A.next = B;
 		B.next = C;
 		C.next = D;

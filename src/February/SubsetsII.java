@@ -49,6 +49,7 @@ public class SubsetsII {
 
 		int tmpindex = index;
 		while (tmpindex < num.length && num[tmpindex] == num[index]) {
+			@SuppressWarnings("unchecked")
 			ArrayList<Integer> tmplist2 = (ArrayList<Integer>) tmplist.clone();
 			tmplist2.add(num[index]);
 			superlist.add(tmplist2);

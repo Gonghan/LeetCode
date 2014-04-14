@@ -6,11 +6,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class atoi_test {
-	atoi a;
+	atoi_solution a;
 
 	@Before
 	public void preObject(){
-		a=new atoi();
+		a=new atoi_solution();
 	}
 	
 	@Test

@@ -27,7 +27,7 @@ public class myLinkedList<T> {
 
 	void remove(Node<T> node) {
 		node.before.after = node.after;
-		node.after.before=node.before;
+		node.after.before = node.before;
 	}
 
 	Node<T> addFirst(T value) {
@@ -50,8 +50,13 @@ public class myLinkedList<T> {
 		}
 		return tmp;
 	}
-	Node<T> getLast() {
-		return fakeTail.before;
+
+	T getLast() {
+		return fakeTail.before.value;
+	}
+
+	T getFirst() {
+		return fakeHead.after.value;
 	}
 
 	void removeFirst() {
@@ -62,6 +67,7 @@ public class myLinkedList<T> {
 		remove(fakeTail.before);
 	}
 
+	@Override
 	public String toString() {
 		String result = "List: ";
 		Node<T> tmp = fakeHead.after;

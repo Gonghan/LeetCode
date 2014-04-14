@@ -10,7 +10,7 @@ public class ValidateBinarySearchTree {
 		TreeNode C=new TreeNode(15);
 		TreeNode D=new TreeNode(6);
 		TreeNode E=new TreeNode(20);
-		TreeNode F=new TreeNode(6);
+//		TreeNode F=new TreeNode(6);
 		A.left=B;
 		A.right=C;
 		C.left=D;

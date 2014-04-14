@@ -79,6 +79,7 @@ public class WordLadderII {
 					}
 					chs[i] = c;
 					String newstr = String.copyValueOf(chs);
+					@SuppressWarnings("unchecked")
 					ArrayList<String> newtmplist = (ArrayList<String>) tmplist
 							.clone();
 					if (newstr.equals(end)) {
