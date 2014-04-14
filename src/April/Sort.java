@@ -80,15 +80,15 @@ public class Sort {
 	private void quickSort(int[] A, int low, int high) {
 		int i = low;
 		int j = high;
-		int pivot =(i + j) / 2;
+		int pivot =A[(i + j) / 2];
 		while (i <= j) {
-			while (A[i] < A[pivot]) {
+			while (A[i] < pivot) {
 				i++;
 			}
-			while (A[j] > A[pivot]) {
+			while (A[j] > pivot) {
 				j--;
 			}
-			if (A[i] <= A[j]) {
+			if (i <= j) {
 				swap(A, i, j);
 				i++;
 				j--;
