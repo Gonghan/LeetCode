@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class distanceMap {
 
-	public int[][] generateMap(int[][] A) {
+	public void generateMap(int[][] A) {
 		int height = A.length;
 		int width = A[0].length;
 		Queue<Node> queue = new LinkedList<Node>();
@@ -32,7 +32,6 @@ public class distanceMap {
 			addIntoQueue(queue,up);
 			addIntoQueue(queue,down);
 		}
-		return A;
 	}
 
 	private void addIntoQueue(Queue<Node> queue, Node left) {
@@ -43,7 +42,7 @@ public class distanceMap {
 	}
 
 	private Node set(int[][] A, int curr_dis, int x, int y) {
-		if(x<0 || y<0){
+		if(x<0 || y<0 || x>=A.length || y>=A[0].length){
 			return null;
 		}
 		int curr_val=A[x][y];
@@ -65,6 +64,25 @@ public class distanceMap {
 			this.x = x;
 			this.y = y;
 			distance = 0;
+		}
+	}
+	public static void main(String args[]){
+		int [][]A=new int[5][6];
+		for(int i=0;i<5;i++){
+			for(int j=0;j<6;j++){
+				A[i][j]=Integer.MAX_VALUE/2;
+			}
+		}
+		A[1][0]=0;
+		A[1][3]=0;
+		A[4][4]=0;
+		distanceMap d=new distanceMap();
+		d.generateMap(A);
+		for(int i=0;i<5;i++){
+			System.out.println();
+			for(int j=0;j<6;j++){
+				System.out.print(" ,"+A[i][j]);
+			}
 		}
 	}
 }
